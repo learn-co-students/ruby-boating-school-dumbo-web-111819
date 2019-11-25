@@ -1,11 +1,11 @@
 class BoatingTest
-    attr_accessor :student, :bt_name, :status, :instructor
+    attr_accessor :student, :test, :status, :instructor
 
     @@all = []
 
-    def initialize(student, bt_name, status, instructor)
+    def initialize(student, test, status, instructor)
         @student = student
-        @bt_name = bt_name
+        @test = test
         @status = status
         @instructor = instructor
 
@@ -15,15 +15,8 @@ class BoatingTest
     def self.all 
         @@all
     end
-
 end
 
-
-
-
-############# TO DO ####################
-
-############## DONE ####################
 # `BoatingTest` class:
 # * should initialize with Student (Object), a boating test name (String), a boating test status (String), and an Instructor (Object)
 # * `BoatingTest.all` returns an array of all boating tests
